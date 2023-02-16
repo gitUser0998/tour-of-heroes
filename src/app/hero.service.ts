@@ -13,7 +13,7 @@ export class HeroService {
 
   getHero(id: number): Observable<Hero> {
     const hero = HEROES.find(h => h.id == id)!;
-    this.messageService.add("we grabbed hero with id of ${id");
+    this.messageService.add(`we grabbed hero with id of ${id)`;
     return of(hero);
   }
 
